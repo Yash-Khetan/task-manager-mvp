@@ -103,7 +103,7 @@ useEffect(() => {
   return (
     
     <div
-      className={`min-h-screen flex flex-col items-center p-8 ${
+      className={`min-h-screen min-w-screen flex flex-col items-center p-8 ${
         darkmode
           ? "bg-gray-900 text-gray-200"
           : "bg-gradient-to-br from-blue-50 to-purple-50 text-gray-800"
@@ -121,7 +121,7 @@ useEffect(() => {
     ) :  (
       <button
         onClick={handleLogin}
-        className={`absolute top-50 left-20 px-4 py-2 rounded-lg font-semibold ${
+        className={`absolute top-4 left-20 px-4 py-2 rounded-lg font-semibold ${
           darkmode ? "bg-gray-700 text-gray-200" : "bg-gray-200 text-white"
         }`}
       >
